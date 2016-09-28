@@ -1,0 +1,5 @@
+sizes = mh.labeled.labeled_size(labeled)
+too_big = np.where(sizes > 10000)
+labeled = mh.labeled.remove_regions(labeled, too_big)
+imshow(labeled)
+show()
